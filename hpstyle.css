@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.outline {
+    border: 3px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 500px;
+}
+.profile-card {
+
+}
+/*  --  Conversation Add  --  */
+.conversation-add {
+
+}
+/*  --  xx Conversation Add xx  --  */

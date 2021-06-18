@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hpstyle.css">
+    <title>Document</title>
+  </head>
+  <body>
+      <!--Home page Host-->
+    <div class="host-home-page wrapper">
+      <div class="profile-card outline">
+        <div class="profile-data">
+          <h4>Paul</h4>
+          <table>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td>: Paul</td>
+            </tr>
+            <tr>
+                <td>Member level</td>
+                <td>: Owner</td>
+            </tr>
+            <tr>
+                <td>Member since</td>
+                <td>: xx/xx/xxxx</td>
+            </tr>
+            <tr>
+                <td>Profile Score</td>
+                <td>: 1916</td>
+            </tr>
+        </table>
+        </div>
+        <div class="card-links">
+          <button class="btn">Forum</button>
+          <button class="btn">Add Conversation</button>
+        </div>
+      </div>
+    </div>
+    <!--xx Home page Host xx-->
+    <!-- Conversation add -->
+    <div class="wrapper">
+        <div class="conversation-add outline">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Conversation</td>
+                    <td>: 2</td>
+                </tr>
+                <tr>
+                    <td>Host</td>
+                    <td>: Paul</td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td>: 21/05/2021</td>
+                </tr>
+            </table>
+            <form action="/action_page.php">
+                <label for="attendees">Attendees:</label>
+                <input type="text" id="attendees" name="attendees" placeholder="comma, separated"><br><br>
+                <label for="groups">Groups Involved:</label>
+                <input type="text" id="groups" name="groups" placeholder="comma, separated"><br><br>
+                <label for="conv-type">Type of Conversation:</label>
+                <input type="text" id="conv-type" name="conv-type"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+    </div>
+    <!--xx Conversation add xx-->
+    <!-- Conversation card -->
+    <div class="wrapper">
+        <div class="conversation-add outline">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Conversation</td>
+                    <td>: 2</td>
+                </tr>
+                <tr>
+                    <td>Host</td>
+                    <td>: Paul</td>
+                </tr>
+                <tr>
+                    <td>Attendees</td>
+                    <td>: Aisling, Martin</td>
+                </tr>
+            </table>
+            <div class="ass-visions">
+                <h4>Associated Visions</h4><!--Visions related to this meeting, generated from database-->
+                <h5>Click to add view and add details</h5><!--Each vision below is a clickable link to the details the page-->
+                <p>M2V1 - More education options for children and parents</p>
+                <p>M2V2 - Better access to community growing schemes</p>
+            </div>
+            <!--The ability to add is only available to the original host-->
+            <h3>Add your vision Below</h3>
+            <p></p>
+            <form action="/action_page.php">
+                <label for="Vision-title">Vision Title:</label>
+                <input type="text" id="Vision-title" name="Vision-title" placeholder="Enter a short title"><br><br>
+                <label for="short-d">Short description:</label>
+                <input type="text" id="short-d" name="short-d" placeholder="comma, separated"><br><br>
+                <label for="tags-1">Main Catagory:</label>
+                <input type="text" id="tags-1" name="tags-1" placeholder="Select one"><br><br>
+                <label for="tags-1">Sub Catagory 1:</label>
+                <input type="text" id="tags-1" name="tags-1" placeholder="Select up to x amount"><br><br>
+                <label for="tags-1">Sub Catagory 2:</label>
+                <input type="text" id="tags-1" name="tags-1" placeholder="comma, separated"><br><br>
+                <input type="submit" value="Submit">
+                <button class="btn">Done</button>
+              </form>
+        </div>
+    </div>
+    <!--xx Conversation card xx-->
+    <!-- Vision Details - Accessed by clicking on vision on conversation card -->
+    <div class="wrapper">
+        <div class="vision-details outline">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Vision</td>
+                    <td>: M2V1</td><!--Generated from database-->
+                </tr>
+                <tr>
+                    <td>Vision Title</td>
+                    <td>: Better Educational Options</td><!--Generated from database-->
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>: Description of vision</td><!--Generated from database-->
+                </tr>
+            </table>
+            <div class="vision-benefits-barriers">
+                <h4>Visions Description</h4><!--Generated from database-->
+                <p>A quick description of the vision which is expanded on greatly through the forum Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eius qui cupiditate quo nisi nulla. </p><!---->
+                <h4>Benefits</h4>
+                <p>M2V1BN1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit voluptatem illum excepturi itaque assumenda.</p>
+                <h4>Barriers</h4>
+                <p>M2V2BR1 - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, distinctio?</p>
+                <h4>Proposals</h4>
+                <p>M2V2P1 - We will do this thing</p>
+            </div>
+            <!--The ability to add is only available to the original host-->
+            <button class="btn">Add Benefits</button>
+            <button class="btn">Add Barriers</button>
+            <button class="btn">Done</button>
+        </div>
+    </div>
+    <!-- Add benefits - Accessed by host only - click on add benefits button on vision details card -->
+    <div class="wrapper">
+        <div class="benefits-section outline">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Vision</td>
+                    <td>: M2V1</td><!--Generated from database-->
+                </tr>
+                <tr>
+                    <td>Vision Title</td>
+                    <td>: Better Educational Options</td><!--Generated from database-->
+                </tr>
+            </table>
+            <div class="vision-benefits-barriers">
+                <h4>Potential Benefits to this vision</h4><!--Generated from database-->
+                <h5>Click on the links below to view the relevant data</h5><!---->
+                <h4>Benefits</h4>
+                <p>M2V1BN1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit voluptatem illum excepturi itaque assumenda.</p>
+
+            </div>
+            <!--The ability to add is only available to the original host-->
+            <h4>Add a new benefit to this solution</h4>
+            <form action="/action_page.php">
+                <label for="benefit-title">Benefit Title:</label>
+                <input type="text" id="benefit-title" name="benefit-title" placeholder="Enter a short title"><br><br>
+                <label for="short-d">Description:</label>
+                <input type="text" id="short-d" name="short-d" placeholder="Enter a short description which can be expanded on"><br><br>
+                <label for="tags-1">Tags:</label>
+                <input type="text" id="tags-1" name="tags-1" placeholder="comma, separated"><br><br>
+                <input type="submit" value="Submit">
+                <button class="btn">Done</button>
+              </form>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="barriers-section outline">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Vision</td>
+                    <td>: M2V1</td><!--Generated from database-->
+                </tr>
+                <tr>
+                    <td>Vision Title</td>
+                    <td>: Better Educational Options</td><!--Generated from database-->
+                </tr>
+            </table>
+            <div class="vision-benefits-barriers">
+                <h4>Potential Barriers to this vision</h4><!--Generated from database-->
+                <h5>Click on the links below to view the relevant data</h5><!---->
+                <h4>Barriers</h4>
+                <p>M2V1BR1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit voluptatem illum excepturi itaque assumenda.</p>
+            </div>
+            <!--The ability to add is only available to the original host-->
+            <h4>Add a new barriers to this solution</h4>
+            <form action="/action_page.php">
+                <label for="barrier-title">Barrier Title:</label>
+                <input type="text" id="barrier-title" name="barrier-title" placeholder="Enter a short title"><br><br>
+                <label for="short-d">Description:</label>
+                <input type="text" id="short-d" name="short-d" placeholder="Enter a short description which can be expanded on"><br><br>
+                <label for="tags-1">Tags:</label>
+                <input type="text" id="tags-1" name="tags-1" placeholder="comma, separated"><br><br>
+                <input type="submit" value="Submit">
+                <button class="btn">Done</button>
+              </form>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="barrier-selected outline">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Vision</td>
+                    <td>: M2V1</td><!--Generated from database-->
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>: Better Educational Options</td><!--Generated from database-->
+                </tr>
+                <tr>
+                    <td>Barrier</td>
+                    <td>: M2V2BR1.</td><!--Generated from database-->
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>: Lorem, ipsum dolor sit amet consectetur adipisicing.</td><!--Generated from database-->
+                </tr>
+            </table>
+            <div class="">
+                <h4>Related Solutions</h4><!--Generated from database-->
+                <p>M2V1BR1S1 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <h4>Add a new solutions to this barrier</h4>
+            <form action="/action_page.php">
+                <label for="barrier-title">Solution Title:</label>
+                <input type="text" id="barrier-title" name="barrier-title" placeholder="Enter a short title"><br><br>
+                <label for="short-d">Description:</label>
+                <input type="text" id="short-d" name="short-d" placeholder="Enter a short description which can be expanded on"><br><br>
+                <label for="tags-1">Tags:</label>
+                <input type="text" id="tags-1" name="tags-1" placeholder="comma, separated"><br><br>
+                <input type="submit" value="Submit">
+                <button class="btn">Done</button>
+              </form>
+        </div>
+    </div>
+  </body>
+</html>
